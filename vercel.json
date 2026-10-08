@@ -2,6 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/", "destination": "/comecar", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/comecar", "destination": "/comecar/index.html" },
     { "source": "/frase", "destination": "/frase/index.html" },

@@ -200,6 +200,21 @@ input:focus-visible {
 .journey-feedback { margin: 16px 0 0; color: #eddb9d; font-size: 13px; line-height: 1.5; }
 .journey-footer { padding: 18px 0 0; font-size: 11px; }
 .journey-footer a { color: #aaa8b6; text-underline-offset: 3px; }
+.funnel-legal-footer {
+  display: flex;
+  width: min(100%, 560px);
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  color: #d0d0da;
+  line-height: 1.5;
+  text-align: center;
+}
+.funnel-legal-footer p { margin: 0; }
+.funnel-legal-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.funnel-legal-footer a { color: #e0c465; text-underline-offset: 3px; }
+.funnel-legal-footer a:hover { color: #f3d77e; }
+.funnel-legal-footer .site-business-id { color: #b9b9c6; font-size: 10px; font-weight: 500; }
 .phrase-card { padding-top: 78px; padding-bottom: 18px; }
 .phrase-card h1 { max-width: 300px; font-size: 24px; }
 .phrase-card h1 span { color: #dfbf63; }
