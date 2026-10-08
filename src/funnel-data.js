@@ -182,23 +182,23 @@ export const OFFERS = [
   {
     image: '/assets/seeds/semente-100.webp',
     label: 'Eu escolho a bênção completa – R$100',
-    href: 'https://pay.kirvano.com/a23049f5-f279-4390-9249-f810e66c14c4',
+    href: 'https://pay.kirvano.com/a685a778-bd84-4eef-a1c8-54956e6c4e12',
     badge: '★ A mais abençoada',
   },
   {
     image: '/assets/seeds/semente-77.webp',
     label: 'Eu escolho prosperar – R$77',
-    href: 'https://pay.kirvano.com/73bd58a6-933c-4a58-9385-f3f08759647b',
+    href: 'https://pay.kirvano.com/8e9b43a0-7d97-41ee-95db-79d920c6df21',
   },
   {
     image: '/assets/seeds/semente-47.webp',
     label: 'Eu escolho crescer – R$47',
-    href: 'https://pay.kirvano.com/679f1e3a-e4e4-43a7-9156-9eaa01e84034',
+    href: 'https://pay.kirvano.com/1f3a1cd8-e1b8-479a-a652-bcc1c38176c5',
   },
   {
     image: '/assets/seeds/semente-27.webp',
     label: 'Eu escolho começar – R$27',
-    href: 'https://pay.kirvano.com/adf95e7f-45f3-441d-9fb8-f2999bf65a17',
+    href: 'https://pay.kirvano.com/78d0f0f8-7f81-4069-a0aa-e17c7f344db6',
   },
 ];
 
