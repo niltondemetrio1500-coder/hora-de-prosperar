@@ -206,5 +206,5 @@ export const PREPARATION_DELAY_MS = 160;
 export const PREPARATION_REDIRECT_DELAY_MS = 1200;
 export const OFFER_REVEAL_SECONDS = 493;
 export const OFFER_RESERVATION_SECONDS = 600;
-export const VIDEO_PLAYER_SRC = 'https://scripts.converteai.net/51189488-3186-411b-bd75-718a9f29c643/players/6a9b067de1081835cc08f226/v4/player.js';
-export const VIDEO_PLAYER_ID = 'vid-6a9b067de1081835cc08f226';
+export const VIDEO_PLAYER_SRC = 'https://scripts.converteai.net/dc8ab8c0-f9ac-47c3-af12-a4174ba40c45/players/6ac7c6036785d5b41a29520a/v4/player.js';
+export const VIDEO_PLAYER_ID = 'vid-6ac7c6036785d5b41a29520a';
