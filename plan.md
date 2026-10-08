@@ -43,3 +43,8 @@ Site estático em HTML, CSS e módulos JavaScript nativos, sem dependências de 
 ## Dependências e entrega
 
 A aplicação usa APIs nativas do navegador/Node.js e serve localmente as imagens. Google Fonts, player ConverteAI e checkouts Kirvano são carregados/acessados apenas nas etapas correspondentes, conforme a origem. O Preview usa `node server.mjs` em `0.0.0.0:3000`. Manter publicação pública, backend e banco desativados.
+
+
+## Mensuração e privacidade
+
+A tag Google Analytics fornecida pelo responsável é carregada em todas as sete rotas públicas. A configuração de visualização envia apenas origem e caminho, omitindo a query string (inclusive o nome em `?nome=`); a política de privacidade informa o fornecedor, a finalidade estatística e o possível uso de cookies/dados técnicos.
