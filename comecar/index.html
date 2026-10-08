@@ -6,21 +6,25 @@
     <meta name="theme-color" content="#090e22" />
     <meta name="description" content="Escreva seu nome e entre na jornada de manifestação divina." />
     <title>Hora de Prosperar — Sua Jornada de Manifestação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" />
     <link rel="stylesheet" href="/src/styles.css" />
-    <script src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="/assets/reference.css" />
+    <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="page page-journey page-start">
-    <main class="journey-card">
-      <img class="journey-logo" src="/assets/logo.webp" alt="Hora de Prosperar" width="516" height="483" />
-      <h1>Deus não te trouxe aqui por acaso.</h1>
-      <p class="journey-promise">Hoje, a prosperidade preparada em seu nome é liberada.</p>
-      <p class="journey-invitation">Escreva seu nome abaixo e entre naquilo que foi preparado para você.</p>
+  <body class="page page-journey page-start funnel-sky">
+    <main class="funnel-sky__inner funnel-card">
+      <img class="funnel-logo" src="/assets/logo.webp" alt="Hora de Prosperar" width="516" height="483" />
+      <h1 class="funnel-h1">Deus não te trouxe aqui por acaso.</h1>
+      <p class="funnel-lead">Hoje, a prosperidade preparada em seu nome é liberada.</p>
+      <p class="funnel-sub">Escreva seu nome abaixo e entre naquilo que foi preparado para você.</p>
       <form id="journey-form" novalidate>
         <label class="visually-hidden" for="journey-name">Digite seu nome</label>
-        <input id="journey-name" name="name" type="text" placeholder="Digite seu nome" autocomplete="given-name" maxlength="80" required />
-        <p class="field-hint">Digite seu nome para começar sua jornada de manifestação.</p>
+        <input class="funnel-input" id="journey-name" name="name" type="text" placeholder="Digite seu nome" autocomplete="given-name" maxlength="80" required />
+        <p class="funnel-hint">Digite seu nome para começar sua jornada de manifestação.</p>
         <p class="field-error" id="name-error" role="alert" hidden>Digite seu nome para continuar.</p>
-        <button class="button button-gold journey-submit" type="submit">Começar minha Jornada</button>
+        <button class="funnel-btn" type="submit">Começar minha Jornada</button>
       </form>
     </main>
   </body>

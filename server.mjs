@@ -9,6 +9,9 @@ const routeFiles = new Map([
   ['/', 'index.html'],
   ['/comecar', 'comecar/index.html'],
   ['/frase', 'frase/index.html'],
+  ['/jornada', 'jornada/index.html'],
+  ['/preparando', 'preparando/index.html'],
+  ['/ultima-etapa', 'ultima-etapa/index.html'],
   ['/politica-de-privacidade', 'politica-de-privacidade/index.html'],
 ]);
 const mimeTypes = new Map([
@@ -33,7 +36,13 @@ const server = createServer((request, response) => {
 
   const normalizedPath = pathname.replace(/\/$/, '') || '/';
   const pagePath = routeFiles.get(normalizedPath);
-  let relativePath = pagePath || decodeURIComponent(pathname).replace(/^\/+/, '');
+  let relativePath;
+  try {
+    relativePath = pagePath || decodeURIComponent(pathname).replace(/^\/+/, '');
+  } catch {
+    response.writeHead(400).end('Bad request');
+    return;
+  }
   if (!pagePath && (relativePath.startsWith('assets/') || relativePath === 'manus-routes.json')) {
     relativePath = `public/${relativePath}`;
   }

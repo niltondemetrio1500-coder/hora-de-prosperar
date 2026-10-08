@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050a14" />
+    <meta name="description" content="Responda com o coração e desbloqueie, um a um, os sete portais da sua prosperidade." />
+    <title>Sua Jornada de Manifestação — Hora de Prosperar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/assets/reference.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="page page-quiz">
+    <div id="funnel-quiz" class="funnel-quiz">
+      <header class="funnel-hud">
+        <img class="funnel-logo funnel-logo--sm" src="/assets/logo.webp" alt="Hora de Prosperar" width="516" height="483" />
+        <p class="funnel-hud__greet">Olá, <span class="funnel-name" data-visitor-name>Você</span> Sua Jornada começou...</p>
+        <p class="funnel-hud__label">SALDO DA CONTA</p>
+        <p class="funnel-hud__balance" id="funnel-hud-balance">R$ 0,00</p>
+        <div class="funnel-progress" role="progressbar" aria-label="Progresso da jornada" aria-valuemin="0" aria-valuemax="100">
+          <span class="funnel-progress__pct" id="funnel-progress-pct">5%</span>
+          <div class="funnel-progress__track">
+            <div class="funnel-progress__fill" id="funnel-progress-fill"></div>
+          </div>
+        </div>
+        <div class="funnel-portals" id="funnel-portals" aria-label="Portais da prosperidade"></div>
+      </header>
+
+      <main class="funnel-quiz__body">
+        <section class="funnel-card funnel-question-card" id="funnel-question-card" aria-live="polite"></section>
+      </main>
+
+      <div class="funnel-overlay" id="funnel-overlay" hidden>
+        <section class="funnel-card funnel-card--modal" id="funnel-modal" role="dialog" aria-modal="true" aria-label="Portal desbloqueado"></section>
+      </div>
+    </div>
+  </body>
+</html>

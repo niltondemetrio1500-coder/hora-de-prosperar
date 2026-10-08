@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#090e22" />
-    <meta name="description" content="Repita a frase em voz alta antes de continuar sua jornada." />
-    <title>Hora de Prosperar — Sua Jornada de Manifestação</title>
+    <meta name="theme-color" content="#080d20" />
+    <meta name="description" content="Antes de continuar sua jornada, repita em voz alta a frase que abre o caminho da sua prosperidade." />
+    <title>Repita em voz alta — Hora de Prosperar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" />
     <link rel="stylesheet" href="/src/styles.css" />
-    <script src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="/assets/reference.css" />
+    <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="page page-journey page-phrase">
-    <main class="journey-card phrase-card">
-      <h1><span id="visitor-name">Você</span>, antes de continuarmos...</h1>
-      <p class="phrase-instruction">Repita esta frase em voz alta:</p>
-      <blockquote class="journey-quote">“A vida dos meus sonhos começa com a minha escolha.”</blockquote>
-      <p class="phrase-reminder">Só clique em continuar após repeti-la em voz alta.</p>
-      <button class="button button-gold journey-submit" type="button" disabled aria-disabled="true" title="A próxima etapa não foi observada na referência.">Continuar Jornada</button>
+  <body class="page page-journey page-phrase funnel-quiz">
+    <main class="funnel-sky__inner funnel-card">
+      <img class="funnel-logo" src="/assets/logo.webp" alt="Hora de Prosperar" width="516" height="483" />
+      <h1 class="funnel-h1"><span id="visitor-name" class="funnel-name">Você</span>, antes de continuarmos...</h1>
+      <p class="funnel-lead">Repita esta frase em voz alta:</p>
+      <blockquote class="funnel-quote">“A vida dos meus sonhos começa com a minha escolha.”</blockquote>
+      <p class="funnel-hint">Só clique em continuar após repeti-la em voz alta.</p>
+      <button class="funnel-btn" id="phrase-continue" type="button">Continuar Jornada</button>
     </main>
   </body>
 </html>
