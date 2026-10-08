@@ -2,49 +2,47 @@
 
 ## Escopo
 
-Reproduzir em português brasileiro a estrutura pública observada em `https://horadeprosperaragora.lovable.app/`: home `/`, entrada `/comecar`, confirmação `/frase`, questionário `/jornada`, preparação `/preparando`, oferta final `/ultima-etapa` e política `/politica-de-privacidade`. Os controles devem navegar e avançar por cliques reais, preservar o nome na URL e manter as 21 perguntas, sete portais, modais de desbloqueio e transições da referência. A página final inclui o player público usado pela origem e quatro escolhas de semente com seus destinos Kirvano originais; o projeto não inicia nem conclui compras.
+Reproduzir em português brasileiro a estrutura pública observada em `https://horadeprosperaragora.lovable.app/`: home `/`, entrada `/comecar`, confirmação `/frase`, questionário `/jornada`, preparação `/preparando`, oferta final `/ultima-etapa`, Política de Privacidade `/politica-de-privacidade` e Termos de Uso `/termos-de-uso`. O fluxo preserva o nome entre telas, 21 perguntas, sete portais, modais e transições; os quatro links de checkout abrem somente quando o próprio visitante os aciona. Criar documentos legais para o site com a razão social e o CNPJ fornecidos pelo responsável; não inserir dados cadastrais não confirmados nem a situação consultada.
 
 ## Direção de design
 
-- **Movimento:** funil espiritual cinematográfico de contraste alto, com uma home editorial de inspiração clássica.
+- **Movimento:** funil espiritual cinematográfico de contraste alto, com home editorial de inspiração clássica.
 - **Princípios:** fidelidade visual por rota; hierarquia clara entre progresso, pergunta e ação; acentos dourados sobre fundos noturnos; feedback imediato ao desbloquear um portal.
-- **Cores:** marfim e carvão na página editorial; azul-marinho profundo e céu dourado no funil; ouro vivo nos destaques, progresso e ações.
-- **Layout:** coluna de leitura estreita na home; cartões de onboarding centralizados; HUD superior com saldo, progresso e sete portais; painel de processamento; vídeo vertical e ofertas abaixo da dobra.
+- **Cores:** marfim e carvão na página editorial e nos documentos legais; azul-marinho profundo e céu dourado no funil; ouro vivo nos destaques, progresso e ações.
+- **Layout:** coluna estreita de leitura na home e nos documentos; cartões de onboarding; HUD superior com saldo, progresso e sete portais; painel de processamento; vídeo vertical e ofertas abaixo da dobra.
 - **Assinaturas:** céu com nuvens douradas; logotipo ilustrado; cápsulas para seções e portais; filete dourado separando áreas.
-- **Interação:** CTA de frase ativo; resposta numérica aceita somente dígitos; opções clicáveis; modais para portais; redirecionamento progressivo; escolhas finais de semente abrem checkout externo apenas após clique do visitante.
-- **Animação:** progresso de 0 a 100% em `/preparando`, modais breves, hover e foco curtos; respeitar `prefers-reduced-motion`.
-- **Tipografia:** Poppins nas telas de funil e botões; Inter no texto funcional; Playfair Display nos títulos editoriais; Cormorant Garamond nos detalhes clássicos.
+- **Interação:** campos e CTAs ativos, opções clicáveis, modais de portal, redirecionamento progressivo e checkouts externos apenas após clique.
+- **Animação:** progresso de 0 a 100% em `/preparando`, modais breves, hover/foco curtos; respeitar `prefers-reduced-motion`.
+- **Tipografia:** Poppins no funil e botões; Inter no texto funcional; Playfair Display nos títulos editoriais; Cormorant Garamond nos detalhes clássicos.
 - **Essência:** experiência espiritual de manifestação para quem busca nova direção; personalidade contemplativa, cinematográfica e encorajadora.
-- **Voz:** preservar os textos de origem em tom devocional e direto. Exemplos: “A resposta pode estar em um passo que quase ninguém percebe.”; “Repita esta frase em voz alta.”
+- **Voz:** tom devocional e direto. Exemplos: “A resposta pode estar em um passo que quase ninguém percebe.”; “Repita esta frase em voz alta.”
 - **Marca:** reutilizar a arte pública “Hora de Prosperar” e o rótulo editorial “Revelação Espiritual”.
 - **Cor própria:** dourado `#D6B237`, para botões, progresso e celebrações.
 
 ## Implementação
 
-Site estático em HTML, CSS e módulos JavaScript nativos, sem dependências de pacotes, autenticação ou banco de dados. O nome transita em `?nome=`; respostas e estado dos portais ficam somente em memória no navegador durante `/jornada` e não são enviados a uma API própria nem persistidos. O player ConverteAI e os destinos Kirvano são recursos externos existentes no funil de origem; não haverá automação de pagamento. Reutilizar localmente as imagens públicas fornecidas pela referência. A política preserva os dados de responsável e os placeholders legais não preenchidos, mas descreve com transparência o questionário, a URL com nome, o player e os checkouts externos, em vez de afirmar que a experiência não possui formulário.
+Site estático em HTML, CSS e módulos JavaScript nativos. Não há autenticação, banco de dados nem API própria; o nome transita em `?nome=` e as respostas ficam em memória no navegador durante a jornada. A página final usa o player ConverteAI e destinos Kirvano existentes; o projeto não processa pagamentos. A Política de Privacidade e os Termos de Uso identificam **Raisa Belo Sociedade Individual de Advocacia — CNPJ 49.160.359/0001-15**, descrevem os fluxos e fornecedores observados e não inventam endereço, e-mail, encarregado ou situação cadastral não confirmados. `src/analytics.js` configura o Google Analytics (G-4QH7RWF8NL) com `page_location` e `page_referrer` sem parâmetros de consulta.
 
 ## Estrutura
 
-- `index.html`: home editorial e apresentação.
+- `index.html`: home editorial e links legais.
 - `comecar/index.html`: campo de nome e início.
-- `frase/index.html`: frase, logotipo, céu e CTA funcional para `/jornada`.
-- `jornada/index.html`: HUD, 21 perguntas, sete portais, saldo, progresso e modais.
+- `frase/index.html`: confirmação oral e CTA para `/jornada`.
+- `jornada/index.html`: HUD, perguntas, portais, saldo, progresso e modais.
 - `preparando/index.html`: progresso animado e transição automática.
-- `ultima-etapa/index.html`: vídeo, espera e quatro opções de semente.
-- `politica-de-privacidade/index.html`: política observada com as ressalvas de dados correspondentes ao clone.
+- `ultima-etapa/index.html`: vídeo, espera, quatro ofertas e links legais.
+- `politica-de-privacidade/index.html`: política de dados e fornecedores.
+- `termos-de-uso/index.html`: condições de uso, conteúdo espiritual, ofertas e checkout externo.
 - `src/main.js`: interação, progresso e navegação.
 - `src/funnel-data.js`: textos, opções, portais, mensagens e ofertas.
-- `src/styles.css`: estilos da home editorial e da política; `public/assets/reference.css`: folha visual da referência copiada e servida localmente para o funil.
-- `server.mjs`: servidor HTTP estático e mapa das sete rotas.
+- `src/analytics.js`: tag Analytics e envio dos campos de página sem query string.
+- `src/styles.css`: estilos da home/documentos; `public/assets/reference.css`: folha visual de referência copiada localmente.
+- `server.mjs`: servidor HTTP estático para Preview e mapa das oito rotas.
 - `public/assets/`: manuscrito, marca, céu, artes dos portais e sementes.
-- `public/manus-routes.json`: rotas declaradas para o Preview.
+- `public/manus-routes.json`: oito rotas declaradas.
+- `package.json`, `scripts/build.mjs` e `vercel.json`: build estático para `dist/` e rewrites das rotas limpas na Vercel.
 - `TODO.md`: critérios de entrega.
 
-## Dependências e entrega
+## Hospedagem
 
-A aplicação usa APIs nativas do navegador/Node.js e serve localmente as imagens. Google Fonts, player ConverteAI e checkouts Kirvano são carregados/acessados apenas nas etapas correspondentes, conforme a origem. O Preview usa `node server.mjs` em `0.0.0.0:3000`. Manter publicação pública, backend e banco desativados.
-
-
-## Mensuração e privacidade
-
-A tag Google Analytics fornecida pelo responsável é carregada em todas as sete rotas públicas. A configuração de visualização envia apenas origem e caminho, omitindo a query string (inclusive o nome em `?nome=`); a política de privacidade informa o fornecedor, a finalidade estatística e o possível uso de cookies/dados técnicos.
+`npm run build` reúne páginas, módulos e ativos em `dist/`; `vercel.json` publica essa saída e reescreve as rotas internas para os respectivos `index.html`. O Preview local continua disponível por `node server.mjs` na porta `3000`. O código será versionado em repositório GitHub privado separado do repositório gerenciado do site. A versão pública será servida pela Vercel, não pelo servidor local do Preview.

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/comecar", "destination": "/comecar/index.html" },
+    { "source": "/frase", "destination": "/frase/index.html" },
+    { "source": "/jornada", "destination": "/jornada/index.html" },
+    { "source": "/preparando", "destination": "/preparando/index.html" },
+    { "source": "/ultima-etapa", "destination": "/ultima-etapa/index.html" },
+    { "source": "/politica-de-privacidade", "destination": "/politica-de-privacidade/index.html" },
+    { "source": "/termos-de-uso", "destination": "/termos-de-uso/index.html" }
+  ]
+}

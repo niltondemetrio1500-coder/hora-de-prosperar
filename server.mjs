@@ -13,6 +13,7 @@ const routeFiles = new Map([
   ['/preparando', 'preparando/index.html'],
   ['/ultima-etapa', 'ultima-etapa/index.html'],
   ['/politica-de-privacidade', 'politica-de-privacidade/index.html'],
+  ['/termos-de-uso', 'termos-de-uso/index.html'],
 ]);
 const mimeTypes = new Map([
   ['.css', 'text/css; charset=utf-8'],
